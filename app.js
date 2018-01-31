@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var about = require('./routes/ari');
+var ari = require('./routes/ari');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
