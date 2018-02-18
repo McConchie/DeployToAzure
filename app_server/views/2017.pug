@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'Top 5 SFV characters in 2017'
+  ul
+    each winner in winners
+      li= winner.ranking + ': ' + winner.name
+
