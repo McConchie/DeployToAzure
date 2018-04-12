@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
-const ctrlApi2016 = require('../controllers/ctrlApi2016');
-const ctrlApi2017 = require('../controllers/ctrlApi2017');
+const ctrlApiFirst = require('../controllers/ctrlApiFirst');
+const ctrlApiSecond = require('../controllers/ctrlApiSecond');
 
 router
-	.route('/2016')
-	.get(ctrlApi2016.list)
-	.post(ctrlApi2017.addChar);
+	.route('/first')
+	.get(ctrlApiFirst.list)
+	.post(ctrlApiSecond.addChar);
 	
 router
-	.route('/2017')
-	.get(ctrlApi2016.list)
-	.post(ctrlApi2017.addChar);
+	.route('/second')
+	.get(ctrlApiFirst.list)
+	.post(ctrlApiSecond.addChar);
 	
 module.exports = router;
