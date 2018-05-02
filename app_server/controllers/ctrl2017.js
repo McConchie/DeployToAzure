@@ -26,7 +26,7 @@ const winnerlist = function(req, res){
                 res.render('error', {message: 'No documents in collection'});
             }
             else {
-                res.render('2017', {winners: body});
+                res.render('second', {winners: body});
             }
         }
     );
