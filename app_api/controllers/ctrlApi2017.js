@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const secondModel = mongoose.model('secondYear');
+const secondModel = mongoose.model('2017');
 
 const winnerlist = function (req, res) {
     res
